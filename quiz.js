@@ -92,6 +92,7 @@ let rightanswer = 0;
 let wronganswer = 0;
 
 function renderQuestion() {
+  check.style.display="none";
   sbmit.style.display = "block";
   nextQuestion.disabled = false;
   const q = questions[currentQuestion];
@@ -172,14 +173,15 @@ nextQuestion.addEventListener("click", function () {
       options.innerHTML = "";
       nextQuestion.style.display = "none";
 
-      sbmit.style.display = "block";
+     sbmit.style.display = "none";
+      check.style.display = "block";
       sbmit.value = "Check your Score";
 
       result.innerHTML = "";
       //result.textContent ="";
-      sbmit.addEventListener("click", function () {
+      check.addEventListener("click", function () {
         if (sbmit.value == "Check your Score") {
-          sbmit.style.display = "none";
+          check.style.display = "none";
           question.textContent = "Thanks for taking quiz!";
 
           result.textContent = `Your Score is ${rightanswer}` + "/" + `${questions.length}`;

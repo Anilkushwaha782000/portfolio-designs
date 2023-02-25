@@ -1129,7 +1129,7 @@ form * {
   right: -100px;
     bottom: 62px;
 }
-#sbmit,#next-question{
+#sbmit,#next-question,#check{
   display: block;
   padding: 10px;
   border: none;

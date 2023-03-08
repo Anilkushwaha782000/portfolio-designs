@@ -109,6 +109,14 @@ next.addEventListener("click", () => {
         
         // Confirm if all steps are completed and then check if inputs are empty
     } else if (step3.style.display === "block" && step2.style.display === "none" && step1.style.display === "none") {
+       if(step3.style.display = "block")
+        {
+        if(country.value=="" || country.value==null || country.value==undefined && branch.value=="" || branch.value==null || branch.value==undefined && product.value=="" || product.value==null || product.value==undefined ){
+          alert("Please fill all the details");
+          return false;
+        }
+      }
+        
         //Set progress bar width
         progressBar.style.width = "100%";
         //And change the progress bar color

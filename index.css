@@ -265,8 +265,8 @@ body{
     top: -10px;
     width: 40px;
     height: 40px;
-    border-top: 3px solid blue;
-    border-left: 3px solid blue;
+   border-top: 3px solid rgb(66, 211, 236);
+    border-left: 3px solid rgb(39, 168, 219);
     transition:all 0.4s;
   }
 
@@ -277,8 +277,8 @@ body{
     right: -10px;
     width: 40px;
     height: 40px;
-    border-bottom: 3px solid blue;
-    border-right: 3px solid blue;
+   border-bottom: 3px solid rgb(245, 108, 16);
+    border-right: 3px solid rgb(245, 108, 16);
     transition:all 0.4s;
     box-shadow: #20B2AA;
   }
@@ -289,7 +289,8 @@ height: 100%;
   }
   .btn1:hover{
     /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
-    color: white;
+  color: rgb(24, 10, 10);
+    background-color: #ec5cbc;
   }
   .cardbody{
     flex: 1 1 auto;

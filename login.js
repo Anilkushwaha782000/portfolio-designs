@@ -3,6 +3,9 @@ const users = [
 	{ username: 'user2', password: 'pass2' },
 	{ username: 'user3', password: 'pass3' },
 ];
+for (const user of users) {
+  console.log(`Username: ${user.username}, Password: ${user.password}`);
+}
 
 // Get the login form and add an event listener for the submit event
 const loginForm = document.getElementById('login-form');
